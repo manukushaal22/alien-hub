@@ -5,12 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyChEJrdHyosxzjL6eDZI_oh270YgR5FMZM',
-    authDomain: 'chat-demo-14a40.firebaseapp.com',
-    databaseURL: 'https://chat-demo-14a40.firebaseio.com',
-    projectId: 'chat-demo-14a40',
-    storageBucket: 'chat-demo-14a40.appspot.com',
-    messagingSenderId: '207417901279'
+    apiKey: "AIzaSyDwbABMItEI3xv54pnDjVIaKE3-PWIu-yU",
+    authDomain: "alienhub.firebaseapp.com",
+    databaseURL: "https://alienhub.firebaseio.com",
+    projectId: "alienhub",
+    storageBucket: "alienhub.appspot.com",
+    messagingSenderId: "520798941997",
+    appId: "1:520798941997:web:717147298126e663"
   }
 };
 

@@ -19,6 +19,10 @@ import { ChatServiceService } from './chat-service.service';
 
 import { appRoutes } from '../routes';
 import { environment } from '../environments/environment';
+import { ChatFormComponent } from './chat-form/chat-form.component';
+import { AuthService } from './auth.service';
+import { FeedComponent } from './feed/feed.component';
+import { MessageComponent } from './message/message.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,10 @@ import { environment } from '../environments/environment';
     ChatroomComponent,
     SignupFormComponent,
     UserListComponent,
-    UserItemComponent
+    UserItemComponent,
+    ChatFormComponent,
+    FeedComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +45,7 @@ import { environment } from '../environments/environment';
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebase),
   ],
-  providers: [ ChatServiceService ],
+  providers: [ ChatServiceService,AuthService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
